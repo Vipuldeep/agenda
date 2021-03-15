@@ -42,10 +42,10 @@ function TodoList() {
 
     return (
         <div>
-            <h1>Any agenda's for today?</h1>
+            <h1 className='heading'>Any agenda's for today?</h1>
             <TodoForm onSubmit={addTodo}/>
-            <Todo 
-            todos={todos}
+            <Todo
+            todos={todos} className='delete-icon edit-icon'
             completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
         </div>
     )
