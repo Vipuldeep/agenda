@@ -41,7 +41,7 @@
     flex-direction: column;
     justify-content: start;
     width: 520px;
-    min-height: 600px;
+    min-height: 450px;
     background: #161a2b;
     text-align: center;
     margin: 128px auto;
@@ -115,3 +115,13 @@
     }
   }
   
+
+  @include media(720px) {
+      .todo-app{
+    width: 320px;
+    min-height: 500px;
+    }
+    .todo-input{
+        width: 150px;
+    }
+}
